@@ -1,0 +1,9 @@
+
+# Application Context Initializers
+org.springframework.context.ApplicationContextInitializer=\
+com.iyang.springboot.work.flow.initializer.ApplicationContextExtend
+
+
+# Application Listeners
+org.springframework.context.ApplicationListener=\
+com.iyang.springboot.work.flow.listener.ApplicationListenerExtend
