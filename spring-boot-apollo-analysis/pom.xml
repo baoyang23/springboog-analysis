@@ -9,13 +9,14 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.iyang</groupId>
-    <artifactId>spring-boot-condition</artifactId>
+    <artifactId>spring-boot-apollo-analysis</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-boot-condition</name>
-    <description>SpringBoot中condition的分析情况</description>
+    <name>spring-boot-apollo-analysis</name>
+    <description>SpringBoot与apollo配置中心整合</description>
 
     <properties>
         <java.version>1.8</java.version>
+        <apollo.version>1.4.0</apollo.version>
     </properties>
 
     <dependencies>
@@ -25,20 +26,16 @@
         </dependency>
 
         <dependency>
+            <groupId>com.ctrip.framework.apollo</groupId>
+            <artifactId>apollo-client</artifactId>
+            <version>${apollo.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-loader -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-loader</artifactId>
-            <version>2.4.1</version>
-            <!--<scope>provided</scope>-->
-        </dependency>
-
-
     </dependencies>
 
     <build>
